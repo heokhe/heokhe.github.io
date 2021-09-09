@@ -1,0 +1,48 @@
+header {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2.5rem 10%;
+  position: relative;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0.1em;
+}
+
+.links a {
+  color: var(--accent, #cb9bf3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  backdrop-filter: blur(50px) saturate(1.75) brightness(1);
+  border-radius: 100%;
+  transition: transform 125ms;
+
+  &:hover, &:focus {
+    transform: scale(1.1);
+  }
+
+  & + a {
+    margin-left: 0.3em;
+  }
+}
+
+.emoji {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  margin-left: 0.2em;
+  user-select: none;
+}

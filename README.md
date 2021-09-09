@@ -1,2 +1,1 @@
-# [Hkh12.github.io](https://Hkh12.github.io)
-My Personal GitHub page.
+Nothing to see here. It's just my personal webpage.

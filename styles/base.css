@@ -1,0 +1,23 @@
+:root {
+  --inter: 'Inter';
+  font-family: Inter, roboto, sans-serif;
+  scroll-behavior: smooth;
+  font-size: 150%;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    --inter: 'Inter var';
+  }
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background-color: #0f0b34;
+  color: white;
+}
