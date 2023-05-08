@@ -9,7 +9,7 @@ export default function Console({
   const output = useMemo(() => evaluate(input), [input])
 
   return (
-    <div class="border-t-neutral-700 border-t mt-3 pt-3 font-mono">
+    <div class="mt-2 font-mono">
       <div class="flex align-center">
         <div class="text-neutral-500 flex-shrink-0">&gt;</div>
         <input
@@ -25,7 +25,7 @@ export default function Console({
       </div>
       <div class="flex align-center mt-2">
         <div class="text-blue-500 flex-shrink-0">&lt;</div>
-        <div class="flex-grow ml-3">output appears here</div>
+        <div class="flex-grow ml-3">{output}</div>
       </div>
     </div>
   )

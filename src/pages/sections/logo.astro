@@ -1,0 +1,52 @@
+<div
+  class="p-8 flex items-center justify-center"
+  role="presentation"
+>
+  <svg height="600" width="600" viewBox="0 0 600 600" class="w-16 h-16">
+    <path
+      transform="translate(50, 50)"
+      d="M 0 0
+      m 0 75
+      a 75 75 0 0 1 75 -75
+      h 375
+      a 50 50 0 0 1 50 50
+      v 0 0
+      a 50 50 0 0 1 -50 50
+      h -350
+      a 100 100 0 0 0 -100 100
+      v 200
+      a 100 100 0 0 0 100 100
+      h 350
+      a 50 50 0 0 0 50 -50
+      a 50 50 0 0 0 -50 -50
+      h -300
+      a 50 50 0 0 1 -50 -50
+      a 50 50 0 0 1 50 -50
+      l 300 0
+      a 50 50 0 0 0 50 -50
+      a 50 50 0 0 0 -50 -50
+      l -250 0"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="30"></path>
+    <circle
+      cx="165"
+      cy="250"
+      r="30"
+      fill="currentColor"
+      style="transform-origin: 165px 250px"></circle>
+  </svg>
+</div>
+<script>
+  const [path] = document.getElementsByTagName('path')
+  const length = path.getTotalLength()
+  path.style.strokeDasharray = `${length} ${length}`
+  path.animate(
+    [{ strokeDashoffset: -length.toString() }, { strokeDashoffset: '0' }],
+    {
+      duration: 1000,
+      iterations: 1,
+      easing: 'ease-out',
+    }
+  )
+</script>
