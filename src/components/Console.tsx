@@ -10,11 +10,11 @@ export default function Console({
 
   return (
     <div class="mt-2 font-mono">
-      <div class="flex align-center">
-        <div class="text-neutral-500 flex-shrink-0">&gt;</div>
+      <div class="align-center flex">
+        <div class="flex-shrink-0 text-neutral-500">&gt;</div>
         <input
           type="text"
-          class="border-none appearance-none outline-none ml-3 placeholder:text-neutral-500 flex-grow"
+          class="ml-3 flex-grow appearance-none border-none outline-none placeholder:text-neutral-500"
           style="font: inherit; background: none"
           placeholder="type here..."
           value={input}
@@ -23,9 +23,9 @@ export default function Console({
           }
         />
       </div>
-      <div class="flex align-center mt-2">
-        <div class="text-blue-500 flex-shrink-0">&lt;</div>
-        <div class="flex-grow ml-3">{output}</div>
+      <div class="align-center mt-2 flex">
+        <div class="flex-shrink-0 text-blue-500">&lt;</div>
+        <div class="ml-3 flex-grow">{output}</div>
       </div>
     </div>
   )

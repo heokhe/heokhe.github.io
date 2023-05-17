@@ -6,7 +6,7 @@ import Logo from '../sections/logo.astro'
 
 <style is:global>
   :root {
-    font-feature-settings: "cv10", "cv11";
+    font-feature-settings: 'cv10', 'cv11';
   }
 </style>
 
@@ -17,17 +17,17 @@ import Logo from '../sections/logo.astro'
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Hosein Khansari</title>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   </head>
-  <body class="bg-black text-white scroll-smooth px-8">
+  <body class="scroll-smooth bg-black px-8 text-white">
     <main>
       <Logo />
       <Header />
       <div
-        class="mt-10 max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 text-2xl text-neutral-400 pb-10 gap-x-16 gap-y-12"
+        class="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-x-16 gap-y-12 pb-10 text-2xl text-neutral-400 md:grid-cols-2"
       >
         <div>
-          <h6 class="text-4xl font-medium mb-4 text-neutral-200">Education</h6>
+          <h6 class="mb-4 text-4xl font-medium text-neutral-200">Education</h6>
           <ul class="list-disc pl-[1em]">
             <li>Graduated from Allame Helli 5 Highschool</li>
             <li>
@@ -37,19 +37,19 @@ import Logo from '../sections/logo.astro'
           </ul>
         </div>
         <div>
-          <h6 class="text-4xl mb-4 font-medium text-neutral-200">Skills</h6>
+          <h6 class="mb-4 text-4xl font-medium text-neutral-200">Skills</h6>
           <div class="text-2xl">Advanced</div>
           <p class="text-base">
             HTML/CSS, JavaScript, React (+ MUI, react-query, zustand, etc.)
           </p>
-          <div class="text-2xl mt-3">Intermediate</div>
+          <div class="mt-3 text-2xl">Intermediate</div>
           <p class="text-base">TypeScript, Tailwind, Vue, Astro</p>
-          <div class="text-2xl mt-3">Beginner</div>
+          <div class="mt-3 text-2xl">Beginner</div>
           <p class="text-base">The next big thing</p>
         </div>
       </div>
       <div class="mt-16">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 grid-flow-row-dense">
+        <div class="grid grid-flow-row-dense grid-cols-1 gap-4 md:grid-cols-3">
           <div class="row-span-1 rounded bg-white bg-opacity-5 p-4">
             <div class="text-xl font-medium">farsi-digits</div>
             <div class="text-neutral-400">Convert digits to Farsi digits</div>
