@@ -2,6 +2,8 @@
 import Console from '../components/Console'
 import Header from '../sections/header.astro'
 import Logo from '../sections/logo.astro'
+import Unreadable from '../sections/projects/Unreadable'
+import NodeCalc from '../sections/projects/NodeCalc'
 ---
 
 <style is:global>
@@ -68,14 +70,14 @@ import Logo from '../sections/logo.astro'
               Small and zero-dependency library for parsing and calculating
               basic math expressions
             </div>
-            <Console evaluate={(x) => x} />
+            <NodeCalc client:visible />
           </div>
           <div class="row-span-2 rounded bg-white bg-opacity-5 p-4">
             <div class="text-xl font-medium">unreadable</div>
             <div class="text-neutral-400">
               Turn your name into an extremely unreadable JS expression.
             </div>
-            <Console evaluate={(x) => x} />
+            <Unreadable client:visible />
           </div>
         </div>
       </div>

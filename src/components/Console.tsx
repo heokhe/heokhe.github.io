@@ -18,7 +18,7 @@ export default function Console({
           style="font: inherit; background: none"
           placeholder="type here..."
           value={input}
-          onChange={(event: Event) =>
+          onInput={(event: Event) =>
             setInput((event.target as HTMLInputElement).value)
           }
         />
