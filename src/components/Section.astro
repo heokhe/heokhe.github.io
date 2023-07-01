@@ -1,0 +1,17 @@
+---
+const { title, fullWidth = false, class: extraClasses } = Astro.props
+---
+
+<section
+  class:list={[extraClasses, 'px-8 mx-auto py-20', !fullWidth && 'max-w-3xl']}
+>
+  <h2
+    class:list={[
+      'font-bold max-w-3xl mx-auto text-8xl mb-10',
+      fullWidth && 'md:px-8',
+    ]}
+  >
+    {title}
+  </h2>
+  <slot />
+</section>

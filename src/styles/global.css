@@ -1,0 +1,12 @@
+@import './fonts/Inter/inter.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  :root {
+    font-feature-settings: 'cv10', 'cv11';
+  }
+}

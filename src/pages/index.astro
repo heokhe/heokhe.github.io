@@ -1,0 +1,111 @@
+---
+import Header from '../sections/header.astro'
+import Logo from '../sections/logo.astro'
+import OpensourceProject from '../components/OpensourceProject.astro'
+import Footer from '../sections/footer.astro'
+import '../styles/global.css'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Hosein Khansari</title>
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+  </head>
+  <body class="scroll-smooth bg-black px-8 text-white">
+    <main>
+      <Logo />
+      <Header />
+      <div
+        class="mt-8 flex flex-wrap gap-x-24 gap-y-16 pr-8 md:flex-nowrap md:pl-32"
+      >
+        <div class="w-full md:w-1/3">
+          <div class="text-neutral-400">
+            <h3 class="mb-6 text-5xl font-bold text-white md:text-6xl">
+              Skills
+            </h3>
+            <h4 class="mb-4 text-4xl font-medium text-green-500">Advanced</h4>
+            <p class="mb-8">
+              HTML/CSS, JavaScript, React (+ MUI, react-query, zustand, etc.)
+            </p>
+            <h4 class="mb-4 text-4xl font-medium text-emerald-500">
+              Intermediate
+            </h4>
+            <p class="mb-8">TypeScript, Tailwind, Remix</p>
+            <h4 class="mb-4 text-4xl font-medium text-teal-500">
+              Other Experiences
+            </h4>
+            <p>Next.js, Astro, Svelte, Vue, Express, Flutter</p>
+          </div>
+          <div class="mt-16 text-neutral-500">
+            <h3 class="mb-6 text-3xl font-bold text-white">Education</h3>
+            <p class="text-xl">
+              I graduated from
+              <strong class="font-medium text-neutral-400">
+                Allame Helli 5 Highschool</strong
+              >
+              in Tehran and right now, I am studying bachelor degree of <strong
+                class="font-medium text-neutral-400"
+                >Computer Engineering</strong
+              > at
+              <strong class="font-medium text-neutral-400"
+                >Sharif University of Tehran</strong
+              >.
+            </p>
+          </div>
+        </div>
+        <div class="w-full">
+          <h3 class="mb-8 text-5xl font-bold text-white md:mb-12 md:text-7xl">
+            Open-source Projects
+          </h3>
+          <div class="divide-y overflow-hidden rounded-3xl bg-neutral-950">
+            <OpensourceProject
+              name="node-calc"
+              description="JavaScript library to parse and evaluate mathematical expressions"
+              url="https://github.com/heokhe/node-calc"
+            />
+            <OpensourceProject
+              name="calqz"
+              description="Telegram calculator chatbot"
+              url="https://github.com/heokhe/calqz"
+            />
+            <OpensourceProject
+              name="rangarang"
+              description="A library that chooses the best colors from a picture, with accessible contrast"
+              language="ts"
+              url="https://github.com/heokhe/rangarang"
+            />
+            <OpensourceProject
+              name="unreadable"
+              description="Turn your name into an unreadable JavaScript expression"
+              url="https://github.com/heokhe/unreadable"
+            />
+            <OpensourceProject
+              name="chandgig"
+              description="Data size units in Farsi"
+              url="https://github.com/heokhe/chandgig"
+            />
+            <OpensourceProject
+              name="farsi-digits"
+              description="Number formatting in Farsi"
+              url="https://github.com/heokhe/farsi-digits"
+            />
+          </div>
+          <a
+            class="mt-4 block pl-6 text-neutral-500 decoration-dotted hover:underline"
+            href="https://github.com/heokhe/heokhe.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            (and this page, of course)
+          </a>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

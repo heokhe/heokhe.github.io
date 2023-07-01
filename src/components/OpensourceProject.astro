@@ -1,0 +1,27 @@
+---
+const { name, description, url, language = 'js' } = Astro.props
+---
+
+<a
+  class="block border-neutral-900 bg-gradient-to-r from-neutral-950 from-50% to-neutral-900 bg-[0_0] px-6 py-8 transition-[background-position] duration-200 last:pb-8 hover:bg-[100%_0] focus:bg-[100%_0]"
+  style="background-size: 200% 100%;"
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div class="text-2xl font-medium">
+    {name}
+    <span
+      class="ml-2 inline-flex aspect-square flex-shrink-0 items-center justify-center rounded-md border-2 border-current px-1 align-middle text-sm font-semibold uppercase leading-none"
+      class:list={[
+        language === 'js' && 'text-yellow-300',
+        language === 'ts' && 'text-blue-600',
+      ]}
+    >
+      {language}
+    </span>
+  </div>
+  <p class="mt-4 text-xl text-neutral-400">
+    {description}
+  </p>
+</a>
