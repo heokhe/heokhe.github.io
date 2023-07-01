@@ -1,14 +1,27 @@
 <header
   class="mx-auto max-w-3xl py-20 text-7xl font-bold sm:text-8xl md:text-9xl"
 >
-  <h1 class="text-white">Hello. 👋</h1>
-  <h1 class="text-neutral-400">My name is Hosein Khansari.</h1>
-  <p
-    class="mt-24 text-6xl text-neutral-500 before:sticky sm:text-7xl md:text-8xl"
-  >
+  <h1 class="relative z-10 text-white">Hello. 👋</h1>
+  <h1 class="relative z-10 text-neutral-400">My name is Hosein Khansari.</h1>
+  <p class="mt-24 text-6xl text-neutral-400 sm:text-7xl md:text-8xl">
     I've been making things on the web since I was 12.
     <br />
     <br />
     I write JavaScript a lot. Plus React, TypeScript, and many other cool stuff.
   </p>
+
+  <!--
+    Previously, the gradient effect was done using a fixed background on the `p` itself.
+    But it acted weird and inconsistent on mobile devices and some browsers.
+    Instead, we use two fixed divs with gradient backgrounds to achieve the same effect,
+    And raise everything else to a z-index of 10 to put them above the gradient.
+  -->
+  <div
+    class="fixed left-0 right-0 top-0 z-0 h-[30vh] bg-gradient-to-b from-black"
+  >
+  </div>
+  <div
+    class="fixed bottom-0 left-0 right-0 z-0 h-[35vh] bg-gradient-to-t from-black opacity-90"
+  >
+  </div>
 </header>
